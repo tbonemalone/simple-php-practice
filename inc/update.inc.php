@@ -20,6 +20,7 @@
 	    $stmt->closeCursor();
 
 	    // Get the ID of the entry we just saved from the database
+	    // This isn't working.  I suspect it's the query statement. I'll look into it later.
 	    $id_obj = $db->query("SELECT LAST_INSERT_ID()");
 	    $id = $id_obj->fetch();
 	    $id_obj->closeCursor();
