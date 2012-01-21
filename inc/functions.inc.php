@@ -1,5 +1,5 @@
 <?php
-
+//  this is part of the model in MVC
 function retrieveEntries($db, $id=NULL)
 {
     /*
@@ -43,7 +43,7 @@ function retrieveEntries($db, $id=NULL)
 
 					  
 
-/*
+        /*
          * If no entries were returned, display a default
          * message and set the fulldisp flag to display a
          * single entry
@@ -64,6 +64,7 @@ function retrieveEntries($db, $id=NULL)
     return $e;
 }
 
+//  this would be part of the controller in MVC
 function sanitizeData($data)
 {
     // If $data is not an array, run strip_tags()

@@ -39,6 +39,19 @@
 		</p>
 		<?php
 			}  // end the if statement
+			// if the full display flag is set to 0, format linked entry titles
+			else {
+				// loop through each entry
+				foreach ($e as $entry) {
+			?>
+				<p>
+					<a href="?id=<?php echo $entry['id'] ?>">
+						<?php echo $entry['title'] ?>
+					</a>
+				</p>
+		<?php
+				} // end foreach
+			} // end else
 		?>
 
 
